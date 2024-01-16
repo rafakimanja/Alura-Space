@@ -24,8 +24,8 @@
                 {% endif %}
             </nav>
         </section>
+        {% include 'partials/_alertas.html' %}
         <section class="galeria" style="margin-left: 5em">
-            {% include 'partials/_alertas.html' %}
             <form action="{% url 'login' %}" method="POST">
                 {% csrf_token %}
                 <div class="row">
